@@ -29,7 +29,9 @@ body{
     margin: 0 auto;
     position: relative;
 }
-
+.row{
+    flex-wrap: nowrap;
+}
 /*
 
 reaset
@@ -41,6 +43,22 @@ a{
 ul{
     list-style-type: none;
     margin: 0;
+}
+.btn{
+    width: 16rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F57F17;
+    color: #fff;
+    border-radius: 4rem;
+    font-family: "Poppins SemiBold";   
+    font-size: 16px;
+    box-shadow: 0 0 4rem rgba(11,190,173, 41%);
+}
+.align-item{
+    align-items: center;
 }
 
 /*
@@ -153,18 +171,14 @@ ul{
     margin-top: 4rem;
 }
 
-.home__wrapper{
-    display: flex;
-    align-items: center;    
-}
-
 .home__content{
     /*  */
 }
 .home__name{
     font-family: "Poppins SemiBold";
-    font-size: 28px;
+    font-size: 25px;
     color: #0CBFAE;
+    margin: 0;
 
 }
 .home__name span{
@@ -183,41 +197,43 @@ ul{
     font-family: "Poppins Regular";
     font-size: 16px;
     color: #333333;
-    margin: 1rem ;
+    margin-top: 1rem ;
 }
 .home__links{
     display: flex;
     justify-content: flex-start;
     margin-top: 3rem;
-    gap: 6rem;
+    gap: 3rem;
 }
 .home__links--btn{
-    width: 200px;
-    height: 60px;
+    width: 16rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #F57F17;
     color: #fff;
     font-size: 16px;
-    border-radius: 3rem;
+    border-radius: 4rem;
+    font-family: "Poppins SemiBold";
+    box-shadow: 0 0 4rem rgba(11,190,173, 41%);
 }
 .home__links .home__links--btn:first-child{
     background-color: #09BEAD;
+    box-shadow: 0 0 4rem rgba(11,190,173, 41%);
 
 }
 .home__photo{
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
+    width: 550px;
+    height: 550px;
+    /* margin: 0 auto; */
     background-image: url(../images/header-avatar.jpg);
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position: center;
-    border: 20px solid #fff;
-    border-radius: 100rem;
-    overflow: hidden;
-    box-shadow: 0 10px 4rem rgba(4,195,255,25%);
+    background-position: center top;
+    border: 25px solid #fff;
+    border-radius: 100%;
+    box-shadow: 0 10px 4rem rgba(245,127,23,24%);
     background-position-x: -165px;
 }
 
