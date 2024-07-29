@@ -130,3 +130,102 @@ ul{
 .nav__toggle-icon--open .nav__toggle-line::before{
     transform: translateY(-1rem) rotate(45deg);
 }
+
+
+
+
+
+
+/*
+
+--main
+
+ */
+
+
+ /*
+
+--main-section-home
+
+ */
+
+.home{
+    margin-top: 4rem;
+}
+
+.home__wrapper{
+    display: flex;
+    align-items: center;    
+}
+
+.home__content{
+    /*  */
+}
+.home__name{
+    font-family: "Poppins SemiBold";
+    font-size: 28px;
+    color: #0CBFAE;
+
+}
+.home__name span{
+    font-family: "Poppins SemiBold";
+    font-size: 28px;
+    color: #F57F17;
+}
+.home__titel{
+    font-family: "Poppins Bold";
+    font-size: 50px;
+    color: #0CBFAE;
+    margin: 0;
+}
+
+.home__text{
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    color: #333333;
+    margin: 1rem ;
+}
+.home__links{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    gap: 6rem;
+}
+.home__links--btn{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F57F17;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3rem;
+}
+.home__links .home__links--btn:first-child{
+    background-color: #09BEAD;
+
+}
+.home__photo{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url(../images/header-avatar.jpg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 20px solid #fff;
+    border-radius: 100rem;
+    overflow: hidden;
+    box-shadow: 0 10px 4rem rgba(4,195,255,25%);
+    background-position-x: -165px;
+}
+
+.home svg{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    transform: scale(1.2);
+}
+ 

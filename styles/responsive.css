@@ -30,7 +30,6 @@
         top: 100%;
         left: 0;
         right: 0;
-        /* border: 1px solid black; */
         display: flex;
         flex-direction: column;
         gap: 2rem;
