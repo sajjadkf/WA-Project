@@ -1,0 +1,132 @@
+@import "./normalize.css";
+@import "./grid.css";
+@import "./fonts.css";
+
+:root{
+    --text-coler:#333333;
+    --shadow-box:rgba(19,182,255,0.24);
+    --app-bg-coler:#fff;
+    --section-bg-coler:#fff;
+    --primery-coler:#0ABEAD;
+}
+
+/*
+
+--App
+
+ */
+html{
+    font-size: 10px;
+}
+body{
+    font-family:"Poppins Medium";
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.container{
+    padding: 0 1.5rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*
+
+reaset
+
+ */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+/*
+
+--header
+
+ */
+     
+.header{
+    /* background-color: #aaa; */
+    box-shadow: 0 10px 4rem rgba(4,195,255,16%);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.nav__logo{
+    font-family:"Poppins Black";
+    color: #0ABEAD;
+    font-size: 5rem;
+    margin: 0;
+
+}
+.menu{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu__item{
+    margin: 0;
+
+}
+.menu__link--active a{
+    color: #0ABEAD;
+}
+.menu__link{
+    font-family:"Poppins Medium";
+    color: var(--text-coler);
+    font-size: 16px;
+    margin: 0;
+}
+.nav__toggle-icon{
+    display: none;
+
+}
+.nav__toggle-line{
+    width: 4.5rem;
+    height: 0.5rem;
+    background:var(--primery-coler);
+    border-radius: 1rem;
+    position: relative;
+    transition: all 100ms ease-in-out;
+}
+.nav__toggle-line::after{
+    content: " ";
+    position: absolute;
+    width: 4.5rem;
+    height: 0.5rem;
+    background:var(--primery-coler);
+    border-radius: 1rem;
+    bottom: 1rem;
+    transition: all 200ms ease-in-out;
+}
+.nav__toggle-line::before{
+    content: " ";
+    position: absolute;
+    width: 4.5rem;
+    height: 0.5rem;
+    background:var(--primery-coler);
+    border-radius: 1rem;
+    top: 1rem;
+    transition: all 200ms ease-in-out;
+}
+
+.nav__toggle-icon--open .nav__toggle-line{
+    background: #fff;
+
+}
+.nav__toggle-icon--open .nav__toggle-line::after{
+    transform: translateY(1rem) rotate(-45deg);
+}
+.nav__toggle-icon--open .nav__toggle-line::before{
+    transform: translateY(-1rem) rotate(45deg);
+}
