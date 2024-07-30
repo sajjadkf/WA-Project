@@ -60,6 +60,13 @@ ul{
 .align-item{
     align-items: center;
 }
+.flex{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+
+
+}
 
 /*
 
@@ -234,7 +241,7 @@ ul{
     border: 25px solid #fff;
     border-radius: 100%;
     box-shadow: 0 10px 4rem rgba(245,127,23,24%);
-    background-position-x: -165px;
+    background-position-x: -120px;
 }
 
 .home svg{
