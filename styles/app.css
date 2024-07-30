@@ -18,10 +18,13 @@
 html{
     font-size: 10px;
 }
-body{
-    font-family:"Poppins Medium";
+body {
+    font-family: "Poppins";
     font-size: 1.6rem;
     line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--app-bg-color);
+    padding-top: 10rem;
 }
 .container{
     padding: 0 1.5rem;
@@ -44,6 +47,12 @@ ul{
     list-style-type: none;
     margin: 0;
 }
+
+/* 
+
+
+
+*/
 .btn{
     width: 16rem;
     height: 5rem;
@@ -65,7 +74,6 @@ ul{
     align-items: center;
     justify-content: center;
 
-
 }
 
 /*
@@ -75,15 +83,29 @@ ul{
  */
      
 .header{
-    /* background-color: #aaa; */
-    box-shadow: 0 10px 4rem rgba(4,195,255,16%);
+    background-color: var(--section-bg-coler);
+    box-shadow: 0 .5rem 4rem rgba(4, 195, 255, 16%);
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0; 
+}
+.menu{
+    display: flex;
+    z-index: 100;
+    padding: 0;
+    align-items: center;
+    gap: 4rem;
+}
+.menu__item{
+    margin: 0;
+
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 .nav__logo{
     font-family:"Poppins Black";
@@ -93,10 +115,11 @@ ul{
 
 }
 .menu{
-    padding: 0;
     display: flex;
     align-items: center;
     gap: 4rem;
+    padding: 0;
+    z-index: 100;
 }
 
 .menu__item{
@@ -111,6 +134,7 @@ ul{
     color: var(--text-coler);
     font-size: 16px;
     margin: 0;
+    display: inline-block;
 }
 .nav__toggle-icon{
     display: none;
@@ -157,10 +181,6 @@ ul{
 }
 
 
-
-
-
-
 /*
 
 --main
@@ -175,11 +195,14 @@ ul{
  */
 
 .home{
-    margin-top: 4rem;
+    background-image: url(../images/shapes/header-shape.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 70rem;
 }
 
 .home__content{
-    /*  */
+    
 }
 .home__name{
     font-family: "Poppins SemiBold";
@@ -233,7 +256,7 @@ ul{
 .home__photo{
     width: 550px;
     height: 550px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     background-image: url(../images/header-avatar.jpg);
     background-size: 150%;
     background-repeat: no-repeat;
@@ -241,7 +264,7 @@ ul{
     border: 25px solid #fff;
     border-radius: 100%;
     box-shadow: 0 10px 4rem rgba(245,127,23,24%);
-    background-position-x: -120px;
+
 }
 
 .home svg{
