@@ -53,6 +53,19 @@
         order: 2;
     
     }
+    /* about */
+    .about-cover{
+        flex-basis: 45%;
+    
+     }
+     .about-content{
+        flex-basis: 52%;
+        padding-left: 2.8rem;
+        padding-top: 1rem;
+        padding-right: 0;
+        padding-bottom: 0;
+    
+     }
 }
 
 @media (max-width:768px) {
@@ -83,7 +96,18 @@
         justify-content: center;
         cursor: pointer;
     }
+    /* about */
+    .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+    
+     }
+
+
 }
+
 
 @media (max-width:576px) {
     .home__name{
@@ -112,6 +136,17 @@
     .home__photo{
         width: 100%;
         
+    }
+    /* home */
+    .about-content{
+        padding: 0.5rem  1rem;
+    }
+    .about-content__links{
+        flex-wrap: wrap;
+        gap: 1rem;
+     }
+    .btn{
+        width: 100%;
     }
 
 
