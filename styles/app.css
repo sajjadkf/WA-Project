@@ -19,7 +19,7 @@ html{
     font-size: 10px;
 }
 body {
-    font-family: "Poppins";
+    font-family: "Poppins Medium";
     font-size: 1.6rem;
     line-height: 1.5;
     color: var(--text-color);
@@ -50,7 +50,7 @@ ul{
 
 /* 
 
-
+-- Components
 
 */
 .btn{
@@ -73,6 +73,48 @@ ul{
     display:flex ;
     align-items: center;
     justify-content: center;
+
+}
+.section-head{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+.section-head__titel{
+    font-family: "Poppins Bold";
+    font-size: 48px;
+    color: var(--primery-coler);
+    margin: 0;
+
+}
+.section-head__caption{
+    font-family: "Poppins Regular";
+    color: var(--text-coler);
+    margin: 0.8rem 0 2.5rem 0;
+
+}
+.section-head__line{
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 0.2rem;
+    background-color: var(--primery-coler);
+    position: relative;
+    border-radius: 1rem;
+}
+.section-head__line::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 4rem;
+    height: 1rem;
+    border-radius: 2rem;
+    background-color: var(--primery-coler);
+
+
 
 }
 
@@ -273,3 +315,12 @@ ul{
     transform: scale(1.2);
 }
  
+
+ /*
+
+--main-section-aboutus
+
+ */
+ .aboutus{
+    margin-top: 5rem;
+ }
