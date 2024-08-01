@@ -120,10 +120,30 @@ ul{
     border-radius: 2rem;
     background-color: var(--primery-coler);
 
-
-
 }
+/* 
 
+coler
+
+*/
+.violet{
+    background: #8540FF;
+}
+.yellow{
+    background-color: #FFC50C;
+}
+.pink{
+    background-color: #EC407A;
+}
+.orange{
+    background-color: #FF6331;
+}
+.blue{
+background-color: #13B6FF;
+}
+.green{
+    background-color: #49AF46;
+}
 /*
 
 --header
@@ -413,3 +433,48 @@ ul{
     background-color: var(--primery-coler);
  }
  
+ /* 
+ 
+ --main--services
+ 
+ */
+ .Services{
+
+ }
+ .Services-content{
+    margin: 8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+ }
+ .Service{
+    width: 370px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+
+ }
+ .service__icon{
+
+ }
+ .service__titel{
+    font-family: "Poppins Bold";
+    font-size: 24px;
+    color: var(--app-bg-coler);
+    margin: 2.5rem 0 1.5rem 0;
+    text-align: center;
+
+ }
+ .service_discription{
+    font-family: "Poppins Regular";
+    color: var(--app-bg-coler);
+    text-align: center;
+    margin: 0;
+ }
