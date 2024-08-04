@@ -3,6 +3,9 @@
         width: 45rem;
         height: 45rem;
     }
+    .row{
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:1200px) {
@@ -109,6 +112,16 @@
         justify-content: center;
     
      }
+     /* resume */
+     .resume .row{
+        flex-direction: column;
+     }
+     .resume .col-3{
+        width: 100%;
+     }
+     .resume .col-9{
+        width: 100%;
+     }
 
 
 }
@@ -135,6 +148,17 @@
     }
     .home__links--btn{
         width: 100%;
+    }
+    /* resume */
+    .resume-content{
+        padding: 0px 1rem 0 2rem;
+    }
+    .resume-content__head--date{
+        padding: 0rem 1rem;
+        font-size: 12px;
+    }
+    .resume-content__head--titel{
+        font-size: 18px;
     }
     
 }
