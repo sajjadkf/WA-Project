@@ -6,6 +6,7 @@
     <title>WA Project</title>
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
 </head>
 <body>
     
@@ -233,8 +234,55 @@
                 
             </div>
         </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="section-head">
+                    <h3 class="section-head__titel">Portfolio</h3>
+                    <p class="section-head__caption">Check in Our Latest Works</p>
+                    <span class="section-head__line"></span>
+                </div>
+                <ul class="portfolio-list">
+                    <li class="portfolio-list__item portfolio-list__item--Active">All Work</li>
+                    <li class="portfolio-list__item">Illustration</li>
+                    <li class="portfolio-list__item">Animation</li>
+                    <li class="portfolio-list__item">App UI</li>
+                    <li class="portfolio-list__item">Web UI</li>
+                    <li class="portfolio-list__item">Social Media</li>
+                    <li class="portfolio-list__item">Print Design</li>
+                </ul>
+                <div class="portfolio-content">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./images/portfolio-1.jpg" alt="" class="portfolio-content__img"></div>
+                          <div class="swiper-slide"><img src="./images/portfolio-2.jpg" alt="" class="portfolio-content__img"></div>
+                          <div class="swiper-slide"><img src="./images/portfolio-3.jpg" alt="" class="portfolio-content__img"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="./scripts/app.js"></script>
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper = new Swiper('.swiper',{
+            pagination: {
+               el: '.swiper-pagination',
+             },
+             breakpoints: {
+                768 : {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+
+                1200 : {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                }
+             }
+        })
+    </script>
 </body>
 </html>

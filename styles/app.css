@@ -490,7 +490,6 @@ background-color: #13B6FF;
  }
  .resume{
     margin-top: 20rem;
-    margin-bottom: 10rem;
     padding: 10rem 0;
     box-shadow: 0 0 6rem rgba(19, 182, 255, 50%);
     background-color: var(--section-bg-coler);
@@ -524,6 +523,7 @@ background-color: #13B6FF;
     align-items: center;
     margin-top: 2.5rem;
     position: relative;
+    cursor: pointer;
  }
  .resume-list__item::before{
     position: absolute;
@@ -536,7 +536,7 @@ background-color: #13B6FF;
     transition: all 250ms ease-in-out;
  }
  .resume-list__item--show::before{
-    width: 20rem;
+    width: 25rem;
  }
  .resume-list__item--show .resume-list__text{
     color: #fff;
@@ -611,3 +611,63 @@ margin: 2rem 0;
     margin: 1rem 0;
     max-width: 800px;
 }
+
+  /* 
+ 
+ --portfolio
+ 
+ */
+
+ .portfolio{
+    margin-top: 15rem;
+ }
+ .portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0 3rem 0 ;
+    padding: 0;
+ }
+ .portfolio-list__item{
+    font-family: "Poppins Regular";
+    font-size: 16px;
+    color: var(--text-coler);
+    padding: 1.2rem 4rem;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in ;
+
+ }
+ .portfolio-list__item--Active{
+    color: var(--app-bg-coler);
+    background-color: var(--primery-coler);
+
+ }
+ .portfolio-content{
+
+ }
+ .portfolio-content__img{
+    width: 100%;
+
+ }
+
+ 
+ .swiper-pagination{
+    position: static !important;
+    margin-top: 2rem;
+
+ }
+ .swiper-pagination-bullet{
+    width: 2rem !important; 
+    height: 2rem !important;
+    border-radius: 100% !important;
+    border: 4px solid #BFBEBE !important;
+    background-color: #fff !important;
+
+ }
+ .swiper-pagination-bullet-active{
+    border-color: var(--primery-coler) !important;
+
+ }
