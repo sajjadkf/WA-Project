@@ -6,12 +6,18 @@
     .row{
         flex-wrap: wrap;
     }
+    .package{
+        width: 350px;
+    }
 }
 
 @media (max-width:1200px) {
     .home__photo{
         width: 38rem;
         height: 38rem;
+    }
+    .package{
+        width: 296px;
     }
 }
 
@@ -123,6 +129,15 @@
         width: 100%;
      }
 
+     /* price */
+     .packages{
+        gap: 4rem;
+    }
+
+     .package{
+        width: 370px;
+    }
+
 
 }
 
@@ -186,6 +201,13 @@
         height: 30rem;
         padding: 3rem;
      }
-
+      /* price */
+      .package{
+        width: 320px;
+    }
+      .package-body__link{
+        width: 16rem;
+      }
+    
 }
 

@@ -128,13 +128,13 @@ coler
 
 */
 .violet{
-    background: #8540FF;
+    background: #8540FF !important;
 }
 .yellow{
     background-color: #FFC50C;
 }
 .pink{
-    background-color: #EC407A;
+    background-color: #EC407A !important;
 }
 .orange{
     background-color: #FF6331;
@@ -671,3 +671,92 @@ margin: 2rem 0;
     border-color: var(--primery-coler) !important;
 
  }
+
+/* 
+
+--pricing
+
+*/
+
+
+.pricing{
+    margin-top: 20rem;
+    padding: 10rem 0;
+    box-shadow: 0 0 6rem rgba(19, 182, 255, 50%);
+    background-color: var(--section-bg-coler);
+    transform: skewY(-6deg);
+}
+.packages{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+ margin-top: 6rem;
+}
+.package{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 6rem rgba(19, 182, 255, 50%);
+    background-color: var(--section-bg-coler);
+}
+
+.package-head{
+    background-color: #FF6331;
+    color: #FF6331;
+    text-align: center;
+    padding: 2rem;
+    
+}
+.packag-head__titel{
+    font-size: 36px;
+    font-family: "Poppins SemiBold";
+    color: var(--app-bg-coler);
+    margin: 1rem 0;
+}
+.package-head__price{
+    font-size: 24px;
+    font-family: "Poppins SemiBold";
+    color: var(--app-bg-coler);
+    margin: 1rem 0 1rem 0;
+}
+.package-head__text{
+    font-size: 16px;
+    font-family: "Poppins Regular";
+    color: var(--app-bg-coler);
+}
+.package-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.package-body-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0 auto;
+
+}
+.package-body-list__item{
+ padding: 1.2rem 0;
+
+}
+.package-body-list__item--svg{
+
+}
+.package-body-list__item--text{
+    font-family: "Poppins Regular";
+    color: var(--text-coler);
+    margin-left: 8px;
+}
+.package-body__link{
+    margin: 0 auto;
+    background-color: #FF6331;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 4rem rgba(245, 127, 23, 25%);
+    cursor: pointer;
+
+}
