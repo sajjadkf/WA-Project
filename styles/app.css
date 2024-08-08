@@ -760,3 +760,121 @@ margin: 2rem 0;
     cursor: pointer;
 
 }
+
+
+/* 
+
+--contactus
+
+*/
+
+
+.contact-us{
+    margin-top: 20rem;
+}
+.contact{
+    height: 800px;
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10rem;
+
+}
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 4rem;
+    background-color: var(--app-bg-coler);
+    box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
+    border-radius: 1rem;
+
+}
+.contact-wrapper__titel{
+    font-size: 36px;
+    font-family: "Poppins Bold";
+    color: var(--primery-coler);
+    margin: 2rem 0 3rem 0;
+
+}
+.contact-wrapper-form{
+
+}
+.contact-wrapper__form--input{
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--app-bg-coler);
+    box-shadow: 0 0 6rem rgba(96, 233, 255, 50%);
+    border-radius: 1rem;
+}
+.contact-wrapper__form--input::placeholder{
+    font-family: "Poppins Regular";
+    font-family: 16px;
+    color: var(--text-coler);
+}
+textarea{
+    font-family: "Poppins Regular";
+    font-family: 16px;
+    color: var(--text-coler);
+}
+.contact-wrapper__form--btn{
+    width: 100%;
+    color: #fff;
+    background-color: var(--primery-coler);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-radius: 4rem;
+    border: 1px solid var(--primery-coler);
+    margin-top: 3rem;
+
+}
+
+/* 
+
+--footer
+
+*/
+.footer{
+
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+}
+.footer-wrapper__text{
+    font-family: "Poppins SemiBold";
+    font-size: 18px;
+    color: var(--text-coler);
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+.footer-wrapper__imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-wrapper__imgs .first-child{
+    background-color: var(--primery-coler);
+
+}
+.footer-wrapper__img{
+margin-left: 1rem;
+border: 1px solid var(--primery-coler);
+border-radius: 100%;
+background-color: var(--app-bg-coler);
+padding: 1rem;
+}
